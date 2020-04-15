@@ -15,11 +15,11 @@ function Nasa() {
       .catch((err) => {
         console.log(err);
       });
-  }, [data]);
+  }, []);
   return (
     <div>
       <div>
-        <img src={data.hdurl}></img>
+        <img src={data.hdurl} alt="Nasa photo of the day"></img>
       </div>
       <h2> {data.title}</h2>
       <h3>{data.date} </h3>
